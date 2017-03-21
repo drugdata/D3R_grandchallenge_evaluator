@@ -1,5 +1,5 @@
 # D3R_GC2_evaluation
-Python based scripts for D3R grand chanllege 2 anaylysis
+Python based scripts for D3R grand chanllege 2 anaylysis.
 For more infomation about the challenge, please visit https://drugdesigndata.org/
 
 1, pose prediction:
