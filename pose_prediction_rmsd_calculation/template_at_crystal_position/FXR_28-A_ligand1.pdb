@@ -1,0 +1,79 @@
+REMARK   4      COMPLIES WITH FORMAT V. 3.0, 1-DEC-2006
+REMARK 888
+REMARK 888 WRITTEN BY MAESTRO (A PRODUCT OF SCHRODINGER, LLC)
+TITLE     xxxx
+HETATM    1  C7  LIG L   1      13.688  23.090   4.719  1.00 18.84           C  
+HETATM    2  C14 LIG L   1      12.818  21.870   4.395  1.00 19.25           C  
+HETATM    3  O18 LIG L   1      13.013  21.621   3.037  1.00 20.81           O  
+HETATM    4  C17 LIG L   1      12.209  20.690   2.440  1.00 23.27           C  
+HETATM    5  C21 LIG L   1      12.503  19.315   2.361  1.00 26.47           C  
+HETATM    6  C20 LIG L   1      11.555  18.464   1.787  1.00 26.06           C  
+HETATM    7  C13 LIG L   1      10.342  18.946   1.344  1.00 22.73           C  
+HETATM    8  C16 LIG L   1      10.069  20.287   1.486  1.00 29.17           C  
+HETATM    9  C15 LIG L   1      11.025  21.126   2.029  1.00 31.06           C  
+HETATM   10  F27 LIG L   1      10.731  22.490   2.196  1.00 40.75           F  
+HETATM   11  C10 LIG L   1       9.245  18.030   0.795  1.00 22.88           C  
+HETATM   12  O19 LIG L   1       9.458  16.838   0.793  1.00 26.03           O  
+HETATM   13  O28 LIG L   1       8.269  18.451   0.460  1.00 31.23           O  
+HETATM   14  C22 LIG L   1      13.533  23.552   6.187  1.00 21.84           C  
+HETATM   15  C33 LIG L   1      13.988  22.455   7.137  1.00 23.66           C  
+HETATM   16  C35 LIG L   1      13.947  22.841   8.614  1.00 22.34           C  
+HETATM   17  C37 LIG L   1      14.685  24.119   8.857  1.00 23.79           C  
+HETATM   18  C36 LIG L   1      14.130  25.219   7.989  1.00 23.50           C  
+HETATM   19  C34 LIG L   1      14.264  24.848   6.483  1.00 22.46           C  
+HETATM   20  N1  LIG L   1      13.287  24.187   3.797  1.00 21.21           N  
+HETATM   21  C4  LIG L   1      12.041  24.812   3.664  1.00 17.64           C  
+HETATM   22  C6  LIG L   1      10.873  24.641   4.330  1.00 19.24           C  
+HETATM   23  C9  LIG L   1       9.817  25.427   3.932  1.00 21.23           C  
+HETATM   24  C12 LIG L   1       9.930  26.334   2.907  1.00 20.75           C  
+HETATM   25  C8  LIG L   1      11.112  26.520   2.217  1.00 20.30           C  
+HETATM   26  C5  LIG L   1      12.185  25.707   2.595  1.00 16.81           C  
+HETATM   27  N3  LIG L   1      13.481  25.683   2.140  1.00 20.71           N  
+HETATM   28  C2  LIG L   1      14.081  24.740   2.846  1.00 20.23           C  
+HETATM   29  C11 LIG L   1      15.471  24.351   2.668  1.00 23.78           C  
+HETATM   30  C23 LIG L   1      16.499  25.021   3.305  1.00 26.57           C  
+HETATM   31  C31 LIG L   1      17.825  24.588   3.176  1.00 27.88           C  
+HETATM   32  C29 LIG L   1      18.098  23.519   2.367  1.00 24.28           C  
+HETATM   33  C30 LIG L   1      17.087  22.790   1.785  1.00 23.08           C  
+HETATM   34  C24 LIG L   1      15.770  23.221   1.918  1.00 24.31           C  
+HETATM   35 CL32 LIG L   1      19.763  22.940   2.238  1.00 28.62          Cl  
+HETATM   36  F26 LIG L   1       8.871  27.074   2.608  1.00 23.76           F  
+HETATM   37  F25 LIG L   1       8.605  25.288   4.551  1.00 25.70           F  
+CONECT    1    2   14   20
+CONECT    2    3    1
+CONECT    3    2    4
+CONECT    4    9    3    5
+CONECT    5    4    6
+CONECT    6    7    5
+CONECT    7   11    8    6
+CONECT    8    7    9
+CONECT    9    8    4   10
+CONECT   10    9
+CONECT   11   13    7   12
+CONECT   12   11
+CONECT   13   11
+CONECT   14   15    1   19
+CONECT   15   14   16
+CONECT   16   15   17
+CONECT   17   16   18
+CONECT   18   19   17
+CONECT   19   14   18
+CONECT   20   28   21    1
+CONECT   21   20   22   26
+CONECT   22   21   23
+CONECT   23   24   22   37
+CONECT   24   36   25   23
+CONECT   25   24   26
+CONECT   26   21   27   25
+CONECT   27   28   26
+CONECT   28   29   20   27
+CONECT   29   30   34   28
+CONECT   30   29   31
+CONECT   31   30   32
+CONECT   32   31   35   33
+CONECT   33   34   32
+CONECT   34   29   33
+CONECT   35   32
+CONECT   36   24
+CONECT   37   23
+END   

@@ -1,0 +1,77 @@
+REMARK   4      COMPLIES WITH FORMAT V. 3.0, 1-DEC-2006
+REMARK 888
+REMARK 888 WRITTEN BY MAESTRO (A PRODUCT OF SCHRODINGER, LLC)
+TITLE     xxxx
+HETATM    1  O16 LIG G 500      22.684 -30.691   7.621  1.00 59.71           O  
+HETATM    2  C4  LIG G 500      23.349 -29.652   7.607  1.00 58.31           C  
+HETATM    3  N13 LIG G 500      22.924 -28.517   7.016  1.00 61.49           N  
+HETATM    4  C22 LIG G 500      21.616 -28.402   6.352  1.00 53.00           C  
+HETATM    5  C28 LIG G 500      20.640 -27.666   7.268  1.00 51.50           C  
+HETATM    6  C34 LIG G 500      19.339 -27.389   6.583  1.00 50.08           C  
+HETATM    7  C35 LIG G 500      19.558 -26.616   5.303  1.00 44.53           C  
+HETATM    8  C33 LIG G 500      20.442 -27.373   4.378  1.00 48.26           C  
+HETATM    9  C27 LIG G 500      21.777 -27.678   5.015  1.00 51.83           C  
+HETATM   10  C9  LIG G 500      24.728 -29.587   8.285  1.00 48.53           C  
+HETATM   11  C21 LIG G 500      25.008 -30.927   9.011  1.00 51.12           C  
+HETATM   12  C26 LIG G 500      25.271 -32.049   8.006  1.00 50.57           C  
+HETATM   13  C31 LIG G 500      25.439 -33.371   8.688  1.00 57.57           C  
+HETATM   14  C36 LIG G 500      26.639 -33.341   9.619  1.00 56.21           C  
+HETATM   15  C32 LIG G 500      26.518 -32.188  10.635  1.00 54.70           C  
+HETATM   16  C25 LIG G 500      26.203 -30.820   9.922  1.00 53.71           C  
+HETATM   17  N2  LIG G 500      24.797 -28.416   9.201  1.00 40.46           N  
+HETATM   18  C10 LIG G 500      23.985 -28.136  10.293  1.00 36.06           C  
+HETATM   19  C23 LIG G 500      22.902 -28.801  10.845  1.00 45.02           C  
+HETATM   20  C29 LIG G 500      22.260 -28.209  11.937  1.00 41.89           C  
+HETATM   21  C30 LIG G 500      22.712 -26.992  12.444  1.00 45.34           C  
+HETATM   22  C24 LIG G 500      23.816 -26.328  11.876  1.00 37.80           C  
+HETATM   23  C12 LIG G 500      24.444 -26.911  10.775  1.00 39.15           C  
+HETATM   24  N3  LIG G 500      25.549 -26.468  10.024  1.00 37.18           N  
+HETATM   25  C1  LIG G 500      25.717 -27.389   9.111  1.00 40.29           C  
+HETATM   26  C14 LIG G 500      26.693 -27.308   8.037  1.00 47.02           C  
+HETATM   27  C18 LIG G 500      27.874 -28.025   8.045  1.00 55.27           C  
+HETATM   28  C19 LIG G 500      28.685 -28.027   6.944  1.00 53.68           C  
+HETATM   29  C15 LIG G 500      28.313 -27.361   5.780  1.00 54.95           C  
+HETATM   30  C20 LIG G 500      27.087 -26.721   5.742  1.00 49.65           C  
+HETATM   31  C17 LIG G 500      26.284 -26.701   6.853  1.00 47.29           C  
+HETATM   32  C8  LIG G 500      29.184 -27.389   4.598  1.00 61.30           C  
+HETATM   33  N7  LIG G 500      28.852 -27.000   3.364  1.00 75.68           N  
+HETATM   34  N5  LIG G 500      29.904 -27.201   2.547  1.00 80.39           N  
+HETATM   35  N6  LIG G 500      30.833 -27.723   3.275  1.00 77.42           N  
+HETATM   36  N11 LIG G 500      30.414 -27.862   4.559  1.00 68.27           N  
+CONECT    1    2
+CONECT    2    1    3   10
+CONECT    3    4    2
+CONECT    4    3    5    9
+CONECT    5    4    6
+CONECT    6    5    7
+CONECT    7    8    6
+CONECT    8    9    7
+CONECT    9    4    8
+CONECT   10   11    2   17
+CONECT   11   10   16   12
+CONECT   12   11   13
+CONECT   13   12   14
+CONECT   14   13   15
+CONECT   15   16   14
+CONECT   16   11   15
+CONECT   17   25   18   10
+CONECT   18   19   17   23
+CONECT   19   18   20
+CONECT   20   19   21
+CONECT   21   22   20
+CONECT   22   23   21
+CONECT   23   18   24   22
+CONECT   24   25   23
+CONECT   25   24   17   26
+CONECT   26   25   31   27
+CONECT   27   26   28
+CONECT   28   29   27
+CONECT   29   28   30   32
+CONECT   30   29   31
+CONECT   31   26   30
+CONECT   32   29   36   33
+CONECT   33   32   34
+CONECT   34   35   33
+CONECT   35   36   34
+CONECT   36   32   35
+END   
