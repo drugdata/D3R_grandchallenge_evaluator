@@ -1,6 +1,6 @@
 # D3R_GC2_evaluation
 Python based scripts for D3R grand challenge 2 analysis.
-For more infomation about the challenge, please visit https://drugdesigndata.org/
+For more infomation about the challenge, please visit https://drugdesigndata.org
 
 1, pose prediction:
     The script D3R_GC2_rmsd_calculation.py under folder pose_prediction_rmsd_calculation calculate the RMSDs between submitted ligand and answsers.
