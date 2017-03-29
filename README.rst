@@ -9,6 +9,7 @@ D3R Grand Challenge Evaluator
 
 Python based scripts for D3R grand challenge
 
+
 For more information please visit:
 
 https://drugdesigndata.org/
@@ -26,18 +27,42 @@ Dependencies
 
 * `argparse <https://pypi.python.org/pypi/argparse>`_
 
-Installation
-------------
 
-pip install coming soon, but for now
+Downloading code
+----------------
+
+We are currently transitioning scripts to be installable via pip, but in the meantime
 
 .. code:: bash
 
-   # download or clone repo 
-   cd D3R_grandchallenge_evaluator
-   make dist
-   pip install dist/*.whl
+   # Download or clone repo, clone is shown below
+   git clone https://github.com/drugdata/D3R_grandchallenge_evaluator.git
 
+
+Example pose prediction
+-----------------------
+
+Here is an example on how to run pose prediction for grand challenge 2.
+It is assumed one has already downloaded code in previous step.
+
+.. code:: bash
+
+   # download D3R_grandchallenge_evaluator
+   cd d3r_gcevaluator
+   python d3r_gc2_ranking_calculation.py -s ../ranking_calculations/example_scoring_submission_folder -t ../ranking_calculations/experimental_data
+
+
+Example scoring and free energy predictions
+-------------------------------------------
+
+Here is an example on how to run scoring and free energy predictions for grand challenge 2.
+It is assumed one has already downloaded code
+
+
+.. code:: bash
+   # download D3R_grandchallenge_evaluator
+   cd d3r_gcevaluator
+   python d3r_gc2_rmsd_calculation.py
 Usage
 -----
 
