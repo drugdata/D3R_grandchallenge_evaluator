@@ -162,9 +162,9 @@ if ("__main__") == (__name__):
     parser.add_argument("-l", "--logfilename", default= "ranking_calculation.log", metavar="FILENAME",
                       help="Log file name")
     opt = parser.parse_args()
-    submitDir = opt.submitdir
-    tempfile = opt.templatefile
-    logfilename = opt.logfilename
+    submitDir = os.path.abspath(opt.submitdir)
+    tempfile = os.path.abspath(opt.templatefile)
+    logfilename = os.path.abspath(opt.logfilename)
     bootstrap_bins = opt.bootstrap
     free_energy_option = opt.freeenergy
     logger = logging.getLogger()

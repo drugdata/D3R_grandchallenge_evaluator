@@ -10,11 +10,15 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    # TODO: put package requirements here
+    "argparse",
+    "scipy",
+    "numpy"
 ]
 
 test_requirements = [
-    # TODO: put package test requirements here
+    "argparse",
+    "scipy",
+    "numpy"
 ]
 
 setup(
@@ -32,6 +36,7 @@ setup(
                  'd3r_gcevaluator'},
     include_package_data=True,
     install_requires=requirements,
+    license="Other",
     zip_safe=False,
     keywords='d3r_gcevaluator',
     classifiers=[
@@ -45,6 +50,8 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
     ],
+    scripts=['d3r_gcevaluator/d3r_gc2_rmsd_calculation.py',
+             'd3r_gcevaluator/d3r_gc2_ranking_calculation.py'],
     test_suite='tests',
     tests_require=test_requirements
 )

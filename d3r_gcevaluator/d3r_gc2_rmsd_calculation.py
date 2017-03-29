@@ -278,9 +278,9 @@ if ("__main__") == (__name__):
     parser.add_argument("-l", "--logfilename", default= "rmsd_calculation.log", metavar="FILENAME",
                       help="Log file name")       
     opt = parser.parse_args()                                 
-    submitDir = opt.submitdir     
-    tempDir = opt.templatedir
-    logfilename = opt.logfilename                                 
+    submitDir = os.path.abspath(opt.submitdir)
+    tempDir = os.path.abspath(opt.templatedir)
+    logfilename = os.path.abspath(opt.logfilename)
     realignment_option = opt.alignment
     logger = logging.getLogger()
     logging.basicConfig( format  = '%(asctime)s: %(message)s', datefmt = '%m/%d/%y %I:%M:%S', filename = logfilename, filemode = 'w', level   = logging.INFO )
