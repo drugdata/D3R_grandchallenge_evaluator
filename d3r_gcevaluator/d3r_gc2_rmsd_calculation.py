@@ -28,6 +28,7 @@ __email__ = "shuailiu25@gmail.com"
 #openeye oechem tools for RMSD calculation
 #schrodinger tools for alignment if use the alignment option
 ########################
+import argparse
 import shutil
 import glob
 import pickle
@@ -36,7 +37,9 @@ import sys
 import os
 import time
 import commands
-from openeye.oechem import *
+
+
+
 
 def mcs(ref_mol, fit_mol):
     #do the mcs search and return OEMatch object.
@@ -266,8 +269,36 @@ def main_rmsd (submitted_folder_path, template_folder_path, realigned = True):
             
 
 if ("__main__") == (__name__):
-    from argparse import ArgumentParser
-    parser = ArgumentParser()
+    desc = """
+This code was design to evaluate the pose prediction of D3R Grand Challenge 2
+For more infomation about the challenge, please visit https://drugdesigndata.org/
+
+Usage example
+### Use the alignment option to realign the submitted structure onto the crystal position###
+### Here the answer file under folder template_at_crystal_position should be used ###
+# python D3R_GC2_rmsd_calculation.py --submitdir ./example_submission_folder --templatedir ./template_at_crystal_position --alignment
+
+### Directly calculate the RMSDs between submitted structure with the template ligand ###
+### Here the answer file under folder template_at_APO_position should be used ###
+# python D3R_GC2_rmsd_calculation.py --submitdir ./example_submission_folder --templatedir ./template_at_APO_position
+
+#Note for FXR system, we notice that using the alignment option will get a slightly lower RMSDs, so our reported RMSDs are RMSDs with the alignment method.
+#########################
+
+#######Output######
+### Overall_rmsd_realigned.csv/Overall_rmsd.csv (depend on usage the alignment option)
+### Output files are under example_submission_folder
+###################
+
+######Dependencies######
+#openeye oechem tools for RMSD calculation
+#schrodinger tools for alignment if use the alignment option
+########################
+    """
+
+    help_formatter = argparse.RawDescriptionHelpFormatter
+    parser = argparse.ArgumentParser(description=desc,
+                                     formatter_class=help_formatter)
     parser.add_argument("-s", "--submitdir", metavar="PATH",
                       help="PATH where we could find the submission files")
 
@@ -277,7 +308,15 @@ if ("__main__") == (__name__):
                       help="Realign submitted structures onto the template structure before calculating the RMSD")       
     parser.add_argument("-l", "--logfilename", default= "rmsd_calculation.log", metavar="FILENAME",
                       help="Log file name")       
-    opt = parser.parse_args()                                 
+    opt = parser.parse_args()
+
+    try:
+        from openeye.oechem import *
+    except ImportError:
+        sys.stderr.write('\nERROR: Unable to import openeye.oechem: '
+                         'from openeye.oechem import *\n\n')
+        sys.exit(1)
+
     submitDir = os.path.abspath(opt.submitdir)
     tempDir = os.path.abspath(opt.templatedir)
     logfilename = os.path.abspath(opt.logfilename)
