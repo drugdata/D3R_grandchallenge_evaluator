@@ -1,8 +1,9 @@
 [license]: https://github.com/drugdata/D3R_GC2_evaluation/blob/master/LICENSE
 
+# D3R_GC2_evaluation
+
 [![DOI](https://zenodo.org/badge/85742402.svg)](https://zenodo.org/badge/latestdoi/85742402)
 
-# D3R_GC2_evaluation
 Python based scripts for D3R grand challenge 2 analysis.
 For more infomation about the challenge, please visit https://drugdesigndata.org
 
