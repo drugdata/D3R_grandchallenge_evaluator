@@ -28,16 +28,11 @@ def bootstrap_exptnoise( calc1, expt1, exptunc1 = 0):
     newcalc = calc[idx]
     newexpt = expt[idx]                                             
     newexptunc = exptunc[idx]
-    print "Check the new list 111", newcalc
-    print "Check the new list 222", newexpt
-    print "Check the new list 333", newexptunc, npoints
     if exptunc == []:
         noise = np.zeros( npoints)
     else:
         noise = np.random.normal( 0., exptunc, npoints)             
-    print "Noise nnnnnn", noise
     newexpt += noise                                                
-    print "Check the new list 444", newexpt
     return newcalc, newexpt 
 def calculate_kendalls (template_value, submitted_value, exp_unc, boot_bins = 10000):
     #calculating kendalls tau etc using bootstrapping resampling method
